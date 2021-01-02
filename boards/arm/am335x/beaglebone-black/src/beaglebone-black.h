@@ -49,6 +49,7 @@
 #include <nuttx/irq.h>
 
 #include "am335x_gpio.h"
+#include "am335x_lcdc.h"
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -160,6 +161,16 @@ int am335x_bringup(void);
  ****************************************************************************/
 
 void am335x_led_initialize(void);
+
+/****************************************************************************
+ * Name: up_fbinitialize
+ *
+ * Description:
+ *   LCD initialization.
+ *
+ ****************************************************************************/
+
+int up_fbinitialize(int display);
 
 #endif /* __ASSEMBLY__ */
 #endif /* __BOARDS_ARM_BEAGLEBONE_BLACK_SRC_BEAGLEBONE_BLACK_H */

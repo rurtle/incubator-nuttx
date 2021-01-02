@@ -99,6 +99,10 @@ void am335x_board_initialize(void)
   /* Configure on-board LEDs. */
 
   am335x_led_initialize();
+
+  /* Configure LCD */
+  
+  up_fbinitialize(0);
 }
 
 /****************************************************************************
